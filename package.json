@@ -5,12 +5,20 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "docs:dev": "vuepress dev doc",
+    "docs:build": "vuepress build doc",
+    "deploy": "bash deploy.sh",
+    "publish": "changeset publish"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.27.0"
+    "@changesets/cli": "^2.27.0",
+    "@commitlint/cli": "^18.4.3"
+  },
+  "dependencies": {
+    "husky": "^8.0.3"
   }
 }
