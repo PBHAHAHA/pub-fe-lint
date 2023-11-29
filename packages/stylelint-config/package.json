@@ -1,0 +1,26 @@
+{
+  "name": "stylelint-config-pub",
+  "version": "1.0.0",
+  "description": "css样式编码规范",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "homepage": "https://github.com/pub-fe-lint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PBHAHAHA/pub-fe-lint.git"
+  },
+  "keywords": [],
+  "author": "pub",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "postcss": "^8.4.31",
+    "postcss-html": "^1.5.0",
+    "postcss-less": "^6.0.0",
+    "postcss-sass": "^0.5.0",
+    "stylelint": "^15.11.0",
+    "stylelint-scss": "^5.3.1"
+  }
+}
