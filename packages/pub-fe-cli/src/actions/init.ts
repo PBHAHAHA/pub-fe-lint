@@ -7,6 +7,7 @@ import npmType from '../utils/npm-type';
 import conflictResolve from '../utils/conflict-resolve';
 import spawn from 'cross-spawn'
 import { PKG_NAME } from '../utils/constants';
+import generateTemplate from '../utils/generate-template';
 
 let step = 0
 /**
@@ -57,6 +58,11 @@ const init  = async (options: InitOptions) => {
       log.success(`---${step}. 安装依赖成功  ${'✔'}`);
     }
   }
+
+  log.info(`---${++step}. 写入配置文件`);
+  generateTemplate(cwd, config);
+  log.success(`---${step}. 写入配置文件成功 ${'✔'}`);
+
 }
 
 export default init

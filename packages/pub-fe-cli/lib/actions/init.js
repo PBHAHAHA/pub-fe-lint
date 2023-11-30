@@ -20,6 +20,7 @@ const npm_type_1 = __importDefault(require("../utils/npm-type"));
 const conflict_resolve_1 = __importDefault(require("../utils/conflict-resolve"));
 const cross_spawn_1 = __importDefault(require("cross-spawn"));
 const constants_1 = require("../utils/constants");
+const generate_template_1 = __importDefault(require("../utils/generate-template"));
 let step = 0;
 const chooseEnableStylelint = (defaultValue) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("inquirer----");
@@ -59,5 +60,8 @@ const init = (options) => __awaiter(void 0, void 0, void 0, function* () {
             log_1.default.success(`---${step}. 安装依赖成功  ${'✔'}`);
         }
     }
+    log_1.default.info(`---${++step}. 写入配置文件`);
+    (0, generate_template_1.default)(cwd, config);
+    log_1.default.success(`---${step}. 写入配置文件成功 ${'✔'}`);
 });
 exports.default = init;
