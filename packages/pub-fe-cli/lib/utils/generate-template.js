@@ -30,7 +30,7 @@ exports.default = (cwd, data, vscode) => {
     const templates = glob_1.default.sync(`${vscode ? '_vscode' : '**'}/*.ejs`, { cwd: templatePath });
     for (const name of templates) {
         const filepath = path_1.default.resolve(cwd, name.replace(/\.ejs$/, '').replace(/^_/, '.'));
-        let content = ejs_1.default.render(fs_extra_1.default.readFileSync(path_1.default.resolve(templatePath, name), 'utf8'), Object.assign({ stylelintExt: constants_1.STYLELINT_FILE_EXT, stylelintIgnores: constants_1.STYLELINT_IGNORE_PATTERN }, data));
+        let content = ejs_1.default.render(fs_extra_1.default.readFileSync(path_1.default.resolve(templatePath, name), 'utf8'), Object.assign({ eslintIgnores: constants_1.ESLINT_IGNORE_PATTERN, stylelintExt: constants_1.STYLELINT_FILE_EXT, stylelintIgnores: constants_1.STYLELINT_IGNORE_PATTERN }, data));
         if (/^_vscode/.test(name)) {
             content = mergeVSCodeConfig(filepath, content);
         }

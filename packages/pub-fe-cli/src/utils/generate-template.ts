@@ -4,7 +4,7 @@ import _ from 'lodash';
 import glob from 'glob';
 import ejs from 'ejs';
 import {
-  // ESLINT_IGNORE_PATTERN,
+  ESLINT_IGNORE_PATTERN,
   STYLELINT_FILE_EXT,
   STYLELINT_IGNORE_PATTERN,
   // MARKDOWN_LINT_IGNORE_PATTERN,
@@ -48,7 +48,7 @@ export default (cwd: string, data: Record<string, any>, vscode?: boolean) => {
   for (const name of templates) { // 
     const filepath = path.resolve(cwd, name.replace(/\.ejs$/, '').replace(/^_/, '.'));
     let content = ejs.render(fs.readFileSync(path.resolve(templatePath, name), 'utf8'), {
-      // eslintIgnores: ESLINT_IGNORE_PATTERN,
+      eslintIgnores: ESLINT_IGNORE_PATTERN,
       stylelintExt: STYLELINT_FILE_EXT,
       stylelintIgnores: STYLELINT_IGNORE_PATTERN,
       // markdownLintIgnores: MARKDOWN_LINT_IGNORE_PATTERN,
