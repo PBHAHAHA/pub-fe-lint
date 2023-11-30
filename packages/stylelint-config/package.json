@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-pub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "css样式编码规范",
   "main": "index.js",
   "scripts": {
