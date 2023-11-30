@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-pub",
+  "version": "1.0.0",
+  "description": "JS编码规范",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "homepage": "https://github.com/pub-fe-lint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PBHAHAHA/pub-fe-lint.git"
+  },
+  "keywords": [],
+  "author": "pub",
+  "license": "MIT"
+}
