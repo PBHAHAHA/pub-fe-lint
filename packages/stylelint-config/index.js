@@ -7,8 +7,8 @@ module.exports = {
             customSyntax: 'postcss-html'
         },
         {
-            files: ['**/*.sass'],
-            customSyntax: 'postcss-sass'
+            files: ['**/*.scss'],
+            customSyntax: 'postcss-scss'
         },
         {
             files: ['**/*.less'],
