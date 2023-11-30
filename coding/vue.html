@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue 项目开发规范 | 购商云汇</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="前端编码规范工程化">
+    <meta name="keywords" content="前端编码规范工程化">
+    
+    <link rel="preload" href="/go2-fe-lint/assets/css/0.styles.d00db6d9.css" as="style"><link rel="preload" href="/go2-fe-lint/assets/js/app.41d0e57e.js" as="script"><link rel="preload" href="/go2-fe-lint/assets/js/2.00bac1f8.js" as="script"><link rel="preload" href="/go2-fe-lint/assets/js/1.675c145e.js" as="script"><link rel="preload" href="/go2-fe-lint/assets/js/26.b890dc21.js" as="script"><link rel="prefetch" href="/go2-fe-lint/assets/js/10.288a0cba.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/11.e652f7ee.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/12.4bfd8da8.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/13.6d2bd1ea.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/14.120391d6.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/15.43610d35.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/16.2afd3159.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/17.f353faea.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/18.3a4f9cac.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/19.c8f659d2.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/20.16eae701.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/21.e4304207.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/22.a89f6fed.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/23.1603218f.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/24.5240a1d3.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/25.46f843f7.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/27.375f4821.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/28.ba03d459.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/29.a74db0f3.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/3.f6f4e25d.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/30.0e40e72c.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/31.b6662dda.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/32.07bedb65.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/33.c19898d0.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/34.331ea89f.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/35.c236893a.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/4.6b0a736d.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/5.936518a3.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/6.93422e5a.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/7.445e9578.js"><link rel="prefetch" href="/go2-fe-lint/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/go2-fe-lint/assets/css/0.styles.d00db6d9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/go2-fe-lint/" class="home-link router-link-active"><!----> <span class="site-name">购商云汇</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/go2-fe-lint/index.html" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编码规范" class="dropdown-title"><span class="title">编码规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="编码规范" class="mobile-dropdown-title"><span class="title">编码规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/html.html" class="nav-link">
+  HTML 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/css.html" class="nav-link">
+  CSS 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/javascript.html" class="nav-link">
+  JavaScript 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/vue.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vue 编码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程规范" class="dropdown-title"><span class="title">工程规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程规范" class="mobile-dropdown-title"><span class="title">工程规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/engineering/git.html" class="nav-link">
+  Git 规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="NPM包" class="dropdown-title"><span class="title">NPM包</span> <span class="arrow down"></span></button> <button type="button" aria-label="NPM包" class="mobile-dropdown-title"><span class="title">NPM包</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/npm/eslint.html" class="nav-link">
+  go2-fe-eslint-config
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/npm/stylelint.html" class="nav-link">
+  go2-fe-stylelint-config
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/npm/commitlint.html" class="nav-link">
+  go2-fe-commitlint-config
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="脚手架" class="dropdown-title"><span class="title">脚手架</span> <span class="arrow down"></span></button> <button type="button" aria-label="脚手架" class="mobile-dropdown-title"><span class="title">脚手架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/cli/go2-fe-spec.html" class="nav-link">
+  go2-fe-spec
+</a></li></ul></div></div> <a href="https://github.com/pbhahaha/go2-fe-spec" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/go2-fe-lint/index.html" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编码规范" class="dropdown-title"><span class="title">编码规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="编码规范" class="mobile-dropdown-title"><span class="title">编码规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/html.html" class="nav-link">
+  HTML 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/css.html" class="nav-link">
+  CSS 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/javascript.html" class="nav-link">
+  JavaScript 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/coding/vue.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vue 编码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程规范" class="dropdown-title"><span class="title">工程规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程规范" class="mobile-dropdown-title"><span class="title">工程规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/engineering/git.html" class="nav-link">
+  Git 规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="NPM包" class="dropdown-title"><span class="title">NPM包</span> <span class="arrow down"></span></button> <button type="button" aria-label="NPM包" class="mobile-dropdown-title"><span class="title">NPM包</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/npm/eslint.html" class="nav-link">
+  go2-fe-eslint-config
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/npm/stylelint.html" class="nav-link">
+  go2-fe-stylelint-config
+</a></li><li class="dropdown-item"><!----> <a href="/go2-fe-lint/npm/commitlint.html" class="nav-link">
+  go2-fe-commitlint-config
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="脚手架" class="dropdown-title"><span class="title">脚手架</span> <span class="arrow down"></span></button> <button type="button" aria-label="脚手架" class="mobile-dropdown-title"><span class="title">脚手架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/go2-fe-lint/cli/go2-fe-spec.html" class="nav-link">
+  go2-fe-spec
+</a></li></ul></div></div> <a href="https://github.com/pbhahaha/go2-fe-spec" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>编码规范</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/go2-fe-lint/coding/html.html" class="sidebar-link">HTML 编码规范</a></li><li><a href="/go2-fe-lint/coding/css.html" class="sidebar-link">CSS 编码规范</a></li><li><a href="/go2-fe-lint/coding/javascript.html" class="sidebar-link">JavaScript 编码规范</a></li><li><a href="/go2-fe-lint/coding/vue.html" aria-current="page" class="active sidebar-link">Vue 编码规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/go2-fe-lint/coding/vue.html#前言-id-start" class="sidebar-link">前言 :id=start</a></li><li class="sidebar-sub-header"><a href="/go2-fe-lint/coding/vue.html#_1-组件命名规范-id-naming" class="sidebar-link">1. 组件命名规范 :id=naming</a></li><li class="sidebar-sub-header"><a href="/go2-fe-lint/coding/vue.html#_2-prop-定义规范-id-prop" class="sidebar-link">2. Prop 定义规范 :id=prop</a></li><li class="sidebar-sub-header"><a href="/go2-fe-lint/coding/vue.html#_3-vue-中的书写顺序-id-order" class="sidebar-link">3. Vue 中的书写顺序 :id=order</a></li><li class="sidebar-sub-header"><a href="/go2-fe-lint/coding/vue.html#_4-vue-通用规范-id-common" class="sidebar-link">4. Vue 通用规范 :id=common</a></li><li class="sidebar-sub-header"><a href="/go2-fe-lint/coding/vue.html#_5-vue-router-规范-id-router" class="sidebar-link">5. Vue Router 规范 :id=router</a></li><li class="sidebar-sub-header"><a href="/go2-fe-lint/coding/vue.html#_6-vue-项目目录规范-id-contents" class="sidebar-link">6. Vue 项目目录规范 :id=contents</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工程规范</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>NPM包</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>脚手架</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-项目开发规范"><a href="#vue-项目开发规范" class="header-anchor">#</a> Vue 项目开发规范</h1> <h2 id="前言-id-start"><a href="#前言-id-start" class="header-anchor">#</a> 前言 :id=start</h2> <p>Vue 项目规范以 Vue官方规范（<a href="https://cn.vuejs.org/v2/style-guide/" target="_blank" rel="noopener noreferrer">https://cn.vuejs.org/v2/style-guide/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）为基础进行开发，同时参照了诸多开发团队的经验，尽量保证了该规范在不同vue团队下的的通用性和统一性。</p> <blockquote><p>注：文中提到的书写规范
+<code>PascalCase</code>（大骆驼拼写法，首字母大写）
+<code>camelCase</code>（骆驼拼写法，首字母小写）
+<code>kebab-case</code>（短横拼写法）</p></blockquote> <h2 id="_1-组件命名规范-id-naming"><a href="#_1-组件命名规范-id-naming" class="header-anchor">#</a> 1. 组件命名规范 :id=naming</h2> <p>A. 组件的文件名称、组件的<code>name</code>属性、导入导出组件时，统一使用大驼峰 <code>PascalCase</code>  的书写规范</p> <p>B. 模板中的组件采用短横线 <code>kebab-case</code> 的书写规范。</p> <p><strong>1.1 组件文件</strong></p> <p>vue组件的文件名使用 <code>PascalCase</code>  的拼写方式</p> <div class="language- extra-class"><pre class="language-text"><code>components/
+    |- SearchButtonClear.vue
+    |- SearchButtonRun.vue
+    |- SearchInputQuery.vue
+</code></pre></div><p><strong>1.2 组件名称</strong></p> <p>组件的 <code>name</code>使用 <code>PascalCase</code>  的拼写方式</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'SearchButton'</span><span class="token punctuation">,</span> 
+    <span class="token comment">// ... </span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>1.3 引入组件</strong></p> <p>对于组件的导出/导入，使用大驼峰 <code>PascalCase</code></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> MyComponent <span class="token keyword">from</span> <span class="token string">'./MyComponent.vue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token string">'MyComponent'</span><span class="token punctuation">,</span> 
+    <span class="token comment">// ... </span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>1.4 模板中组件名的大小写</strong></p> <p>无论是在DOM模板，还是在字符串模板中，统一使用 <code>kebab-case</code> 拼写方式，且要手动闭合组件。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MyComponent</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span><span class="token punctuation">/&gt;</span></span>
+
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="_2-prop-定义规范-id-prop"><a href="#_2-prop-定义规范-id-prop" class="header-anchor">#</a> 2. Prop 定义规范 :id=prop</h2> <p><strong>2.1 在声明 <code>prop</code> 时，遵循以下的规范：</strong></p> <ul><li>必须指定类型</li> <li>必须加上注释，表明其含义</li> <li>必须加上 <code>required</code> 或者 <code>default</code>，两者二选其一</li> <li>如果有业务需要，加上 <code>validator</code> 验证</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 组件状态，用于控制组件的颜色</span>
+   <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+     <span class="token literal-property property">required</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+     <span class="token function-variable function">validator</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">return</span> <span class="token punctuation">[</span>
+         <span class="token string">'succ'</span><span class="token punctuation">,</span>
+         <span class="token string">'info'</span><span class="token punctuation">,</span>
+         <span class="token string">'error'</span>
+       <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 用户级别，用于显示皇冠个数</span>
+   userLevel：<span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token literal-property property">required</span><span class="token operator">:</span> <span class="token boolean">true</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>2.2 完整单词的组件名</strong></p> <p>组件名应该倾向于完整单词而不是缩写。</p> <p>bad:</p> <div class="language- extra-class"><pre class="language-text"><code>components/ 
+    |- SdSettings.vue
+    |- UProfOpts.vue
+</code></pre></div><p>good:</p> <div class="language- extra-class"><pre class="language-text"><code>components/ 
+    |- StudentDashboardSettings.vue
+    |- UserProfileOptions.vue
+</code></pre></div><p><strong>2.3 Prop 名大小写</strong></p> <p>在声明 prop 的时候，其命名应该始终使用 <code>camelCase</code>，而在模板和 JSX 中应该始终使用 <code>kebab-case</code>。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// greetingText</span>
+<span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span> 
+    <span class="token literal-property property">greetingText</span><span class="token operator">:</span> String
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- greeting-text --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>welcome-message</span> <span class="token attr-name">greeting-text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>hi<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>welcome-message</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="_3-vue-中的书写顺序-id-order"><a href="#_3-vue-中的书写顺序-id-order" class="header-anchor">#</a> 3. Vue 中的书写顺序 :id=order</h2> <p><strong>3.1 vue 选项的声明顺序</strong></p> <p>vue 组件/实例的选项应该遵循统一的顺序：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 全局的</span>
+<span class="token operator">-</span> name
+
+<span class="token comment">// 模板依赖 (模板内使用的资源)</span>
+<span class="token operator">-</span> components
+<span class="token operator">-</span> directives
+<span class="token operator">-</span> filters
+<span class="token operator">-</span> mixins
+
+<span class="token comment">// 接口 </span>
+<span class="token operator">-</span> props    
+
+<span class="token comment">// 本地状态 (本地的响应式 property)</span>
+<span class="token operator">-</span> data     
+<span class="token operator">-</span> computed
+
+<span class="token comment">// 事件和声明周期</span>
+<span class="token operator">-</span> watch
+<span class="token operator">-</span> created
+<span class="token operator">-</span> mounted
+<span class="token operator">-</span> updated
+<span class="token operator">-</span> activited
+<span class="token operator">-</span> update
+<span class="token operator">-</span> beforeDestroy
+<span class="token operator">-</span> destroyed
+
+<span class="token comment">// 非响应式的 property</span>
+<span class="token operator">-</span> methods   
+</code></pre></div><p>so，一个vue单文件组件大致就是这样的：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span> 
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> 
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+    <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> 
+<span class="token punctuation">}</span><span class="token punctuation">;</span> 
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span> 
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>3.2 元素属性的顺序</strong></p> <p>元素 (包括组件) 的 <code>attribute</code> 应该有统一的顺序，原生属性放在前面，指令其次，传参和方法放在最后</p> <div class="language- extra-class"><pre class="language-text"><code>- class, id, ref 
+- name, data-*, src, alt, for, type, href, value, max, min 
+- title, placeholder, aria-*, role 
+- required, readonly, disabled 
+- v-model, v-for, key, v-if, v-show, v-bind,:
+- foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot;
+</code></pre></div><h2 id="_4-vue-通用规范-id-common"><a href="#_4-vue-通用规范-id-common" class="header-anchor">#</a> 4. Vue 通用规范 :id=common</h2> <p><strong>4.1 多个 attribute 的元素应该分多行撰写，每个 attribute 一行</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span>
+    <span class="token attr-name">foo</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span> 
+    <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>b<span class="token punctuation">&quot;</span></span> 
+    <span class="token attr-name">baz</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>c<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>4.2 统一使用指令缩写</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+    <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>newTodoText<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>newTodoInstructions<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+    <span class="token attr-name">@input</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onInput<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">@focus</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onFocus<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#header</span><span class="token punctuation">&gt;</span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Here might be a page title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#footer</span><span class="token punctuation">&gt;</span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Here's some contact info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>4.3 公共组件必须保证是独立的, 可复用的，拒绝定制代码。要写组件使用说明。</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!--
+  /**
+  * 组件名称
+  * @desc 组件描述
+  * @author 组件作者
+  * @param {Number} [age]    - 参数说明
+  * @param {String} [name] - 参数说明
+  * @example 调用示例
+  *  &lt;person :age=&quot;age&quot; :columns=&quot;columns&quot; :name=&quot;name&quot;&gt;&lt;/person&gt;
+  */
+   --&gt;</span>
+   
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>inputFiled</span> 
+        <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>number<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$t('login.input')<span class="token punctuation">&quot;</span></span> 
+        <span class="token attr-name">iconClass</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>icon-ico_shoujihao<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>11<span class="token punctuation">&quot;</span></span> 
+    <span class="token punctuation">/&gt;</span></span>
+</code></pre></div><p><strong>4.4 关于组件内样式</strong></p> <p>1）为组件样式设置作用域，保证样式只在当前组件内生效</p> <div class="language- extra-class"><pre class="language-text"><code>/* bad */ 
+&lt;style&gt;
+.btn-close { 
+    background-color: red;
+} 
+&lt;/style&gt; 
+
+/* good */ 
+&lt;style scoped&gt;
+.button-close { 
+    background-color: red; 
+}
+&lt;/style&gt;
+</code></pre></div><p>2）覆盖第三方库的样式时，需加上顶级作用域</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;style&gt;
+/* bad */ 
+.el-input { width: 254px !important; } 
+
+/* good */ 
+.page-user .el-input {
+    width: 254px !important; 
+} 
+/* .customerForm为当前组件的顶级dom */
+&lt;/style&gt; 
+</code></pre></div><p>3）通用组件不要设置 <code>scoped</code> 作用域，这样就没法在其他组件中复写了。</p> <p><strong>4.5 尽量不在 mounted、created 之类的方法写逻辑。</strong></p> <p>把逻辑抽离出去，在生命周期函数中只做引用</p> <p><strong>4.6 组件内不要使用复杂的行内表达式</strong></p> <p>可以使用 <code>method</code> 或是 <code>computed</code> 属性来替代其功能。复杂的行内表达式难以阅读，也不能复用。</p> <p><strong>4.7 模块的命名尽量和后端保持统一</strong></p> <p>模块命名尽量和后端对模块的命名保持一致，这样方便对接api，也保证了前后端的一致性</p> <h2 id="_5-vue-router-规范-id-router"><a href="#_5-vue-router-规范-id-router" class="header-anchor">#</a> 5. Vue Router 规范 :id=router</h2> <p><strong>5.1 使用懒加载机制</strong></p> <p><strong>5.2 路由都添加 name 字段，路由跳转时，统一使用 <code>name</code> 进行跳转，方便管理</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">:to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ name: 'home' }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'home'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="_6-vue-项目目录规范-id-contents"><a href="#_6-vue-项目目录规范-id-contents" class="header-anchor">#</a> 6. Vue 项目目录规范 :id=contents</h2> <p>针对一个完整的 <code>Vue</code> 项目，它的目录应遵循以下的规范</p> <div class="language- extra-class"><pre class="language-text"><code>src                               源码目录
+|-- api                              所有api接口
+|-- assets                         静态资源，images, icons等
+|-- components                 公用组件
+|-- config                         配置信息
+|-- constants                     常量信息，项目所有Enum, 全局常量等
+|-- directives                     自定义指令
+|-- filters                          过滤器，全局工具
+|-- libs                               外部引用的插件存放及修改文件
+|-- plugins                        插件，全局使用
+|-- router                          路由，统一管理
+|-- store                            vuex, 统一管理
+|-- styles                           样式文件
+|-- views                           视图目录
+|   |-- User                            User模块名
+|   |-- |-- UserList.vue                    User列表页面
+|   |-- |-- UserEdit.vue                   User编辑页面
+|   |-- |-- UserDetail.vue                User详情页面
+|   |-- |-- components                   User模块通用组件文件夹
+|   |-- Employee                         Employee模块
+</code></pre></div><p>注意事项：</p> <ol><li>全局通用的组件放在 <code>/src/components</code> 下</li> <li>其他业务页面中的组件，放在各自页面下的 <code>./components</code> 文件夹下</li> <li><code>components</code> 和 <code>views</code> 下面的文件夹和vue文件，都使用大驼峰 <code>PascalCase</code>  的命名规则 （除了<code>index.vue</code>）</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/go2-fe-lint/coding/javascript.html" class="prev">
+        JavaScript 编码规范
+      </a></span> <span class="next"><a href="/go2-fe-lint/engineering/git.html">
+        Git 规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/go2-fe-lint/assets/js/app.41d0e57e.js" defer></script><script src="/go2-fe-lint/assets/js/2.00bac1f8.js" defer></script><script src="/go2-fe-lint/assets/js/1.675c145e.js" defer></script><script src="/go2-fe-lint/assets/js/26.b890dc21.js" defer></script>
+  </body>
+</html>
