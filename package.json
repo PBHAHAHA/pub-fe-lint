@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "docs:dev": "vuepress dev doc",
-    "docs:build": "vuepress build doc",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "publish": "changeset publish"
   },
@@ -16,7 +16,10 @@
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
-    "@commitlint/cli": "^18.4.3"
+    "@commitlint/cli": "^18.4.3",
+    "vuepress": "1.9.10",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-zooming": "^1.1.8"
   },
   "dependencies": {
     "husky": "^8.0.3"
