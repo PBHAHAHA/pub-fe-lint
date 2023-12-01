@@ -109,7 +109,11 @@ const init  = async (options: InitOptions) => {
       }
       // 安装eslint依赖
       if (config.enableESLint) {
-        spawn.sync(npm, ['i', '-D', 'eslint','eslint-config-pub'], { stdio: 'inherit', cwd });
+        spawn.sync(npm, ['i', '-D', 'eslint','eslint-config-pub',"eslint-plugin-import","@babel/core","@babel/eslint-parser","vue-eslint-parser","eslint-plugin-vue"], { stdio: 'inherit', cwd });
+      }
+      // 安装priettier依赖
+      if (config.enablePrettier) {
+        spawn.sync(npm, ['i', '-D', 'prettier', 'eslint-config-prettier'], { stdio: 'inherit', cwd });
       }
       // 如果是vue项目
       log.success(`---${step}. 安装依赖成功  ${'✔'}`);

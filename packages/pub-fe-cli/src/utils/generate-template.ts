@@ -63,6 +63,8 @@ export default (cwd: string, data: Record<string, any>, vscode?: boolean) => {
     // 跳过空文件
     if (!content.trim()) continue;
 
+    // console.log(filepath)
+    // return
     fs.outputFileSync(filepath, content, 'utf8');
   }
 };
