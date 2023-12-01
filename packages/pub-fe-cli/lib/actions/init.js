@@ -26,7 +26,7 @@ const chooseEslintType = () => __awaiter(void 0, void 0, void 0, function* () {
     const { type } = yield inquirer_1.default.prompt({
         type: 'list',
         name: 'type',
-        message: `---${++step}. 请选择项目的语言（JS/TS）和框架（React/Vue）类型：`,
+        message: `---${++step}. 请选择项目的ESLint语言类型：`,
         choices: constants_1.PROJECT_TYPES,
     });
     return type;
@@ -36,7 +36,7 @@ const chooseEnableStylelint = (defaultValue) => __awaiter(void 0, void 0, void 0
     const { enable } = yield inquirer_1.default.prompt({
         type: 'confirm',
         name: 'enable',
-        message: `---${++step}. 是否需要使用 stylelint（若没有样式文件则不需要-）：`,
+        message: `---${++step}. 是否需要使用 stylelint（若没有样式文件则不需要）：`,
         default: defaultValue,
     });
     return enable;
@@ -95,6 +95,9 @@ const init = (options) => __awaiter(void 0, void 0, void 0, function* () {
             cross_spawn_1.default.sync(npm, ['i', '-D', constants_1.PKG_NAME], { stdio: 'inherit', cwd });
             if (config.enableStylelint) {
                 cross_spawn_1.default.sync(npm, ['i', '-D', 'stylelint', 'stylelint-scss', 'stylelint-config-pub', 'postcss-html', 'postcss-scss', 'postcss-less'], { stdio: 'inherit', cwd });
+            }
+            if (config.enableESLint) {
+                cross_spawn_1.default.sync(npm, ['i', '-D', 'eslint', 'eslint-config-pub'], { stdio: 'inherit', cwd });
             }
             log_1.default.success(`---${step}. 安装依赖成功  ${'✔'}`);
         }

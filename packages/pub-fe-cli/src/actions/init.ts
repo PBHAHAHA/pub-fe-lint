@@ -17,7 +17,7 @@ const chooseEslintType = async (): Promise<string> => {
   const { type } = await inquirer.prompt({
     type: 'list',
     name: 'type',
-    message: `---${++step}. 请选择项目的语言（JS/TS）和框架（React/Vue）类型：`,
+    message: `---${++step}. 请选择项目的ESLint语言类型：`,
     choices: PROJECT_TYPES,
   });
 
@@ -33,7 +33,7 @@ const chooseEnableStylelint = async (defaultValue: boolean): Promise<boolean> =>
   const { enable } = await inquirer.prompt({
     type: 'confirm',
     name: 'enable',
-    message: `---${++step}. 是否需要使用 stylelint（若没有样式文件则不需要-）：`,
+    message: `---${++step}. 是否需要使用 stylelint（若没有样式文件则不需要）：`,
     default: defaultValue,
   });
 
@@ -106,8 +106,12 @@ const init  = async (options: InitOptions) => {
       // 安装stylelint的依赖
       if (config.enableStylelint) {
         spawn.sync(npm, ['i', '-D', 'stylelint','stylelint-scss','stylelint-config-pub', 'postcss-html', 'postcss-scss', 'postcss-less'], { stdio: 'inherit', cwd });
-        
       }
+      // 安装eslint依赖
+      if (config.enableESLint) {
+        spawn.sync(npm, ['i', '-D', 'eslint','eslint-config-pub'], { stdio: 'inherit', cwd });
+      }
+      // 如果是vue项目
       log.success(`---${step}. 安装依赖成功  ${'✔'}`);
     }
   }
